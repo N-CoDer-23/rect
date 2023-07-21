@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ .box{
+    width: 150px;
+    height: 150px;
+    background: dodgerblue;
+    transition: .5s;
+    margin: auto;
+ }
+ .box:hover{
+    transform: translateY(50px);
+    transform: translateX(-50px);
+    /* x yonga y pastga */
+    transform: translate(50px,50px);
+    transform: rotate(360deg);
+
+    transform: rotate(60deg);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+
+    transform: scaleX(1.5);
+    transform: scaleY(1.5);
+    transform: scale(0.5);
+
+    transform: skewY(36deg);
+    transform: skewX(-36deg);
+
+ }
+ .two{
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: auto;
+    margin-top: 20px;
+    transition: .5s;
+    transform-origin: top;
+ }
+ .two:hover{
+    transform: rotate(360deg);
+ }
+
+ .three{
+    width: 150px;
+    height: 150px;
+    background: green;
+    margin: 50px auto;
+    transition: .5s;
+ }
+ .three:hover{
+    transform: translateY(50px) rotate(30deg) scale(1.2);
+   
+ }
+
+ .text{
+    width: 200px;
+    height: 120px;
+    border: 1px solid red;
+  
+    /* BORDERDAN CIQB KERTGAN TEXTLARNI HIDDEN KESB TAWLAYDI.AUTO
+    KESMAYDI JOYLAYDI HAMMASINI KORSA BOLADIGAN QILADI  */
+    overflow: hidden;
+    overflow: auto;
+ }
+
+ .photo{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+ }
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.photo:hover img{
+    transform: scale(1.2) rotate( 10deg);
+}
