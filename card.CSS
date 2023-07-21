@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+    gap: 50px;
+    padding: 50px 10%;
+}
+h2{
+    text-align: center;
+}
+.card{
+    width: 280px;
+    height: 350px;
+    box-shadow: 0 0 15px #0002;
+    padding: 16px;
+    text-align: center;
+    overflow: hidden;
+
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.card:hover .photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.card h2{
+    margin-top: 15px;
+}
+button{
+    padding: 5px 50px;
+    border-radius: 20px;
+    border: 1px solid blue;
+    background: white;
+}
